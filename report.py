@@ -27,4 +27,6 @@ def main():
     
     
 if __name__ == '__main__':
+    cur_dir = os.sep.join(os.path.abspath(__file__).split(os.sep)[:-1])
+    os.chdir(cur_dir)    
     main()
